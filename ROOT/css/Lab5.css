@@ -1,0 +1,141 @@
+html, body {
+    height: 100%;
+    margin: 0; /* Убирает внешние отступы */
+    padding: 0; /* Убирает внутренние отступы */
+    font-family: "Mulish";
+    display: flex;
+    flex-direction: column; /* Указывает, что элементы внутри будут располагаться вертикально */
+}
+
+header {
+    background-color: #101419;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+main {
+    flex: 1; /* Указывает, что main займёт всё оставшееся пространство */
+    background-color: #EDD3C4;
+    display: flex;
+    justify-content: center; /* Горизонтально центрирует содержимое */
+    align-items: center; /* Вертикально центрирует содержимое */
+    padding: 20px;
+    box-sizing: border-box; /* Учитывает отступы в размерах элемента */
+}
+
+nav a {
+    color: #EDD3C4;
+    margin: 0 15px; /* Добавляет отступы по горизонтали */
+    height: 100%;
+}
+
+footer {
+    background-color: #101419;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+
+button {
+    width: 100%;
+    max-width: 200px;
+    height: 40px;
+    background-color: #60AB9A;
+    color: white;
+    border: none; /* Убирает границы кнопки */
+    border-radius: 5px; /* Закругляет углы кнопки */
+    font-size: 16px;
+    cursor: pointer; /* Указывает, что кнопка кликабельна */
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #4c8a7a;
+}
+
+h2 {
+    color: #EDD3C4;
+    font-size: 160%;
+}
+
+h3 {
+    color: #EDD3C4;
+    font-size: 160%;
+}
+
+p {
+    color: #EDD3C4;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #C1D7D3;
+    border: 2px solid #101419; /* Задаёт границу толщиной 2 пикселя, сплошную линию данного цвета */
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Описание: Добавляет тень вокруг контейнера: 0 0 — смещение тени по горизонтали и вертикали (здесь без смещения). 10px — радиус размытия тени. rgba(0, 0, 0, 0.1) — цвет тени: чёрный с прозрачностью 10%. */
+    height: auto; /* Автоматическая высота */
+}
+
+#game-title {
+    color: #101419;
+}
+
+#game-output {
+    margin-top: 20px;
+    color: #101419;
+    font-size: 18px;
+}
+
+#game-image {
+    margin-top: 20px;
+    max-width: 600px;
+    height: auto;
+}
+
+/* Адаптация под мобильные устройства */
+@media (max-width: 768px) {
+    header, footer {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 140%;
+    }
+
+    h3 {
+        font-size: 140%;
+    }
+
+    #game-output {
+        font-size: 16px;
+    }
+
+    .container {
+        padding: 15px;
+        max-width: 100%;
+        margin: 0 10px;
+    }
+
+    button {
+        width: 90%;
+        max-width: none;
+        margin: 5px 0;
+        font-size: 14px;
+        height: 40px;
+    }
+
+    #game-image {
+        max-width: 100%;
+    }
+}
